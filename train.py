@@ -42,7 +42,7 @@ write_filelist('test_filelist.csv', test_filelist)
 
 convlstm_model = model.get_model()
 convlstm_model.compile(
-	optimizer=tf.train.AdamOptimizer(0.001),
+	optimizer=tf.keras.optimizers.Adam(lr=0.001),
 	loss='mse')
 
 num_epochs = 100
