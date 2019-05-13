@@ -60,4 +60,4 @@ for epoch in range(num_epochs):
 		average_error += error
 	average_error = average_error/len(test_filelist)
 	print('Average error: {}'.format(average_error))
-	convlstm_model.save('convlstm_model.h5')
+	convlstm_model.save('convlstm_model2.h5')
